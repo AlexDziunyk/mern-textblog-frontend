@@ -1,0 +1,35 @@
+.blog__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    transition: 0.5s;
+    padding: 25px;
+    gap: 30px;
+}
+
+.blog__data h2:hover {
+    transition: 0.3s;
+    color: #6246EA;
+}
+
+.blog__container:hover {
+    box-shadow: 4px 6px 13px rgba(215, 215, 215, 0.25);
+}
+
+.blog__data p {
+    word-break: break-all;
+}
+
+.blog__delete {
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 7px 10px;
+    border-radius: 50px;
+}
+
+.blog__delete:hover {
+    background-color: #eff0f3;
+}

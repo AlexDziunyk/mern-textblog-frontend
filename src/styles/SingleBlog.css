@@ -1,0 +1,9 @@
+.singleblog__description {
+    line-height: 35px;
+    background-color: white;
+    filter: drop-shadow(4px 6px 13px rgba(194, 174, 174, 0.25));
+    font-size: 1.3rem;
+    margin-top: 1em;
+    padding: 20px;
+    border-radius: 12px;
+}
