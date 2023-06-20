@@ -16,7 +16,7 @@ const SingleBlog = () => {
         }
         const fetchBlog = async () => {
             try {
-                const response = await fetch('http://localhost:4000/api/blogs/' + id, {
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/api/blogs/` + id, {
                     headers: {
                         'Authorization': `Bearer ${user.token}`
                     }

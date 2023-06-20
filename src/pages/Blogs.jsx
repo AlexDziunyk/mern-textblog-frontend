@@ -16,7 +16,7 @@ const Blogs = () => {
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const response = await fetch('http://localhost:4000/api/blogs', {
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/api/blogs`, {
                     headers: {
                         'Authorization': `Beared ${user.token}`
                     }
