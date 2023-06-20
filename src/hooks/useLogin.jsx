@@ -16,6 +16,7 @@ export const useLogin = () => {
             body: JSON.stringify({login, password})
         })
         console.log(response)
+        console.log(response.json())
         const json = await response.json()
         console.log(json)
         if(!response.ok) {
