@@ -9,7 +9,7 @@ export const useLogin = () => {
     const login = async (login, password) => {
         setIsLoading(true)
         setError(null)
-
+        console.log(1)
         const response = await fetch(`/api/user/login`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
