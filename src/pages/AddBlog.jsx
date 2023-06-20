@@ -19,7 +19,7 @@ const AddBlog = () => {
         }
 
         const blog = {title, description}
-        const response = await fetch(`${process.env.REACT_APP_API_URL}api/blogs/create`, {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/blogs/create`, {
             method: 'POST',
             body: JSON.stringify(blog),
             headers: {
