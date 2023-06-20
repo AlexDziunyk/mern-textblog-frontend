@@ -15,6 +15,7 @@ export const useLogin = () => {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({login, password})
         })
+        console.log(response)
         const json = await response.json()
         console.log(json)
         if(!response.ok) {
