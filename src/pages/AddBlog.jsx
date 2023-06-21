@@ -19,7 +19,7 @@ const AddBlog = () => {
         }
 
         const blog = {title, description}
-        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/blogs/create`, {
+        const response = await fetch(`https://mern-textblog-44104543a6bf.herokuapp.com/api/blogs/create`, {
             method: 'POST',
             body: JSON.stringify(blog),
             headers: {
