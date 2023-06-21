@@ -16,7 +16,7 @@ const SingleBlog = () => {
         }
         const fetchBlog = async () => {
             try {
-                const response = await fetch(`https://mern-textblog-44104543a6bf.herokuapp.com/api/blogs/${id}`, {
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/api/blogs/${id}`, {
                     headers: {
                         'Authorization': `Bearer ${user.token}`
                     }
