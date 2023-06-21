@@ -9,8 +9,7 @@ export const useLogin = () => {
     const login = async (login, password) => {
         setIsLoading(true)
         setError(null)
-        console.log(import.meta.env.VITE_API_URL)
-        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/user/login`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/user/login`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({login, password})
